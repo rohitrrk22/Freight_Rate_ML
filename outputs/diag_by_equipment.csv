@@ -1,0 +1,4 @@
+equipment,n,MAE,MedAPE%,MAPE%,median_bias%,mean_log_ratio
+Dry Van,27212,116.7,1.6,4.73,0.12,0.0
+Flatbed,8694,92.69,1.46,4.4,-0.29,-0.01
+Reefer,12108,112.6,1.61,4.94,-0.6,-0.02

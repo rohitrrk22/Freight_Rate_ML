@@ -1,0 +1,33 @@
+rows 48000 12000 | train dates 2025-01-01 2025-10-31 | val dates 2025-11-01 2025-12-31
+missing weight/market_index train: 300 374 val: 165 249
+negative weights train/val: 292 145 | at cap: 1204
+distance == 70 floor: 48 21
+unseen cities: ['Allentown', 'Charlotte', 'Chicago', 'Jackson', 'Knoxville', 'Laredo', 'Norfolk', 'San Diego'] rows touching them: 1447 12.1%
+market_index mean train/val: 1.083 0.927
+label outliers (rate >2x or <0.5x lane median): 672 (1.40%); high 336, low 336
+/home/claude/clean/freight-rate-prediction/eda.py:61: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  cw = tr[(tr.distance > 1200) & (tr.lane_ratio.between(.5, 2))].groupby("week").apply(lambda g: np.corrcoef(g.quote_signal, g.res)[0, 1])
+       qs_mean  qs_std  qs_skew    regime
+month                                    
+1         2.07    0.25     0.87  positive
+2         2.10    0.25     0.95  positive
+3         2.18    0.27     0.86  positive
+4         1.96    0.26    -0.79  negative
+5         1.91    0.27    -0.84  negative
+6         2.30    0.29     0.86  positive
+7         1.92    0.27    -0.82  negative
+8         2.05    0.22    -0.01     noise
+9         2.20    0.28     0.88  positive
+10        1.94    0.27    -0.94  negative
+11        2.06    0.22    -0.01     noise
+12        2.05    0.22     0.01     noise
+                         train  validation
+rows                     48000       12000
+missing weight             300         165
+missing market_index       374         249
+negative weight            292         145
+weight at +/-47,500       1204         301
+distance == 70              48          21
+duplicate load_id            0           0
+rows with unseen cities      0        1447
+figures written

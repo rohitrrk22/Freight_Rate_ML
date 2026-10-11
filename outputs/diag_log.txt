@@ -1,0 +1,78 @@
+Exclude quote_signal {'MAE_5fold': np.float64(127.79), 'MedAPE_5fold': np.float64(2.8), 'MAPE_5fold': np.float64(5.35), 'MAPEcore_5fold': np.float64(3.08), 'MAE_Aug': np.float64(130.89), 'MedAPE_Aug': np.float64(3.33), 'MAPE_Aug': np.float64(5.93), 'MAPEcore_Aug': np.float64(3.44)} 27s
+Include raw quote_signal {'MAE_5fold': np.float64(118.08), 'MedAPE_5fold': np.float64(2.1), 'MAPE_5fold': np.float64(4.99), 'MAPEcore_5fold': np.float64(2.73), 'MAE_Aug': np.float64(149.43), 'MedAPE_Aug': np.float64(4.05), 'MAPE_Aug': np.float64(6.99), 'MAPEcore_Aug': np.float64(4.61)} 54s
+Regime-aware: signed signal only (FINAL) {'MAE_5fold': np.float64(112.4), 'MedAPE_5fold': np.float64(1.76), 'MAPE_5fold': np.float64(4.77), 'MAPEcore_5fold': np.float64(2.5), 'MAE_Aug': np.float64(191.08), 'MedAPE_Aug': np.float64(5.38), 'MAPE_Aug': np.float64(8.33), 'MAPEcore_Aug': np.float64(6.0)} 82s
+Regime-aware: signed signal + regime indicator {'MAE_5fold': np.float64(109.52), 'MedAPE_5fold': np.float64(1.51), 'MAPE_5fold': np.float64(4.62), 'MAPEcore_5fold': np.float64(2.35), 'MAE_Aug': np.float64(198.26), 'MedAPE_Aug': np.float64(5.41), 'MAPE_Aug': np.float64(8.41), 'MAPEcore_Aug': np.float64(6.07)} 110s
+half-life None 1.862 123s
+half-life 21 1.742 145s
+half-life 45 1.764 169s
+half-life 90 1.815 192s
+half-life 180 1.837 215s
+               MAE  MedAPE  MAPE_core
+1 seed(s)  112.398   1.764      2.505
+3 seed(s)  111.739   1.734      2.477
+/home/claude/clean/freight-rate-prediction/scripts/diagnostics.py:79: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  return pd.DataFrame({"n": g.size(), "MAE": g.apply(lambda d: (d.pred - d.actual).abs().mean()), "MedAPE%": g.ape.median() * 100, "MAPE%": g.ape.mean() * 100, "median_bias%": g.signed.median() * 100, "mean_log_ratio": g.lr.mean()}).round(2)
+/home/claude/clean/freight-rate-prediction/scripts/diagnostics.py:79: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  return pd.DataFrame({"n": g.size(), "MAE": g.apply(lambda d: (d.pred - d.actual).abs().mean()), "MedAPE%": g.ape.median() * 100, "MAPE%": g.ape.mean() * 100, "median_bias%": g.signed.median() * 100, "mean_log_ratio": g.lr.mean()}).round(2)
+/home/claude/clean/freight-rate-prediction/scripts/diagnostics.py:79: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  return pd.DataFrame({"n": g.size(), "MAE": g.apply(lambda d: (d.pred - d.actual).abs().mean()), "MedAPE%": g.ape.median() * 100, "MAPE%": g.ape.mean() * 100, "median_bias%": g.signed.median() * 100, "mean_log_ratio": g.lr.mean()}).round(2)
+/home/claude/clean/freight-rate-prediction/scripts/diagnostics.py:79: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  return pd.DataFrame({"n": g.size(), "MAE": g.apply(lambda d: (d.pred - d.actual).abs().mean()), "MedAPE%": g.ape.median() * 100, "MAPE%": g.ape.mean() * 100, "median_bias%": g.signed.median() * 100, "mean_log_ratio": g.lr.mean()}).round(2)
+/home/claude/clean/freight-rate-prediction/scripts/diagnostics.py:79: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  return pd.DataFrame({"n": g.size(), "MAE": g.apply(lambda d: (d.pred - d.actual).abs().mean()), "MedAPE%": g.ape.median() * 100, "MAPE%": g.ape.mean() * 100, "median_bias%": g.signed.median() * 100, "mean_log_ratio": g.lr.mean()}).round(2)
+/home/claude/clean/freight-rate-prediction/scripts/diagnostics.py:79: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  return pd.DataFrame({"n": g.size(), "MAE": g.apply(lambda d: (d.pred - d.actual).abs().mean()), "MedAPE%": g.ape.median() * 100, "MAPE%": g.ape.mean() * 100, "median_bias%": g.signed.median() * 100, "mean_log_ratio": g.lr.mean()}).round(2)
+
+ dist_bucket 
+                   n     MAE  MedAPE%  MAPE%  median_bias%  mean_log_ratio
+dist_bucket                                                              
+(0, 300]       4018   31.05     2.28   5.54         -0.87           -0.02
+(1000, 1500]   8959  113.83     1.54   4.04          0.12           -0.00
+(1500, 2500]  10972  194.63     1.60   4.90          0.29            0.01
+(2500, 5000]   2672  257.79     1.82   5.51          0.42            0.02
+(300, 600]     9474   48.72     1.48   4.88         -0.60           -0.01
+(600, 1000]   11919   76.71     1.46   4.49         -0.29           -0.00
+
+ equipment 
+                n     MAE  MedAPE%  MAPE%  median_bias%  mean_log_ratio
+equipment                                                             
+Dry Van    27212  116.70     1.60   4.73          0.12            0.00
+Flatbed     8694   92.69     1.46   4.40         -0.29           -0.01
+Reefer     12108  112.60     1.61   4.94         -0.60           -0.02
+
+ month 
+             n     MAE  MedAPE%  MAPE%  median_bias%  mean_log_ratio
+month                                                              
+2025-05  4913   91.98     1.80   4.45         -1.74           -0.01
+2025-06  9566   93.16     1.04   3.33         -0.12           -0.01
+2025-07  9824   86.77     1.18   3.51         -0.88           -0.01
+2025-08  9518  193.01     5.60   8.54         -0.64           -0.01
+2025-09  9340   94.48     1.70   3.92          1.60            0.01
+2025-10  4853   88.57     1.03   4.26          0.06            0.00
+
+ unseen_city 
+                  n     MAE  MedAPE%  MAPE%  median_bias%  mean_log_ratio
+unseen_city                                                             
+False        48014  111.32     1.58   4.72         -0.15            -0.0
+
+ weight_missing 
+                     n     MAE  MedAPE%  MAPE%  median_bias%  mean_log_ratio
+weight_missing                                                             
+False           47714  111.53     1.58   4.72         -0.15           -0.00
+True              300   77.79     1.53   4.77         -0.28            0.01
+
+ rate_bucket 
+                         n     MAE  MedAPE%  MAPE%  median_bias%  mean_log_ratio
+rate_bucket                                                                    
+(1272.082, 1661.76]  6002   39.40     1.40   2.71         -0.32           -0.01
+(1661.76, 2058.95]   6001   48.27     1.48   2.60         -0.29           -0.00
+(2058.95, 2562.49]   6003   51.46     1.51   2.24          0.13           -0.00
+(2562.49, 3388.79]   6001   77.35     1.59   2.60          0.15            0.00
+(3388.79, 4232.22]   6002  103.51     1.57   2.72          0.23            0.01
+(4232.22, 24294.98]  6001  453.21     1.68   5.77          0.01           -0.05
+(59.679, 886.632]    6002   72.49     2.09  14.90         -0.56            0.03
+(886.632, 1272.082]  6002   44.90     1.45   4.22         -0.57           -0.01
+
+overall bias {'median_bias_pct': -0.1464678221801137, 'mean_log_ratio': -0.0031178036117010624, 'share_abs_log_ratio_gt_half': 1.3787645270129545}
+
+diagnostics done in 306s

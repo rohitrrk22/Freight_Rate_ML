@@ -1,0 +1,9 @@
+,train,validation
+rows,48000,12000
+missing weight,300,165
+missing market_index,374,249
+negative weight,292,145
+"weight at +/-47,500",1204,301
+distance == 70,48,21
+duplicate load_id,0,0
+rows with unseen cities,0,1447

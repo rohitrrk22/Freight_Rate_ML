@@ -1,0 +1,5 @@
+variant,MAE_5fold,MedAPE_5fold,MAPE_5fold,MAPEcore_5fold,MedAPE_noise_Aug16,MedAPE_noise_Aug9,MAE_noise_Aug16
+Batch (shipped),112.398,1.764,4.766,2.505,1.611,1.667,91.382
+Causal market feature only,112.466,1.783,4.777,2.518,1.705,1.768,93.994
+Causal regime only,105.576,1.757,4.431,2.154,1.602,1.85,92.196
+Fully causal (both),105.552,1.766,4.429,2.155,1.72,1.92,95.027

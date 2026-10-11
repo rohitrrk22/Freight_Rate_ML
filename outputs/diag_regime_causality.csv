@@ -1,0 +1,13 @@
+month,n,skew_full,regime_full,skew_first7d,regime_first7d,skew_first14d,regime_first14d,agree_7d,agree_14d
+1,4918,0.87,positive,0.79,positive,0.83,positive,True,True
+2,4337,0.95,positive,0.89,positive,0.94,positive,True,True
+3,5036,0.86,positive,1.03,positive,0.98,positive,True,True
+4,4819,-0.79,negative,-0.8,negative,-0.83,negative,True,True
+5,4913,-0.84,negative,-0.9,negative,-0.9,negative,True,True
+6,4783,0.86,positive,1.06,positive,1.0,positive,True,True
+7,4912,-0.82,negative,-0.97,negative,-0.86,negative,True,True
+8,4759,-0.01,noise,-0.14,noise,-0.1,noise,True,True
+9,4670,0.88,positive,0.96,positive,0.93,positive,True,True
+10,4853,-0.94,negative,-0.98,negative,-0.94,negative,True,True
+11,5836,-0.01,noise,-0.02,noise,0.01,noise,True,True
+12,6164,0.01,noise,0.01,noise,0.02,noise,True,True

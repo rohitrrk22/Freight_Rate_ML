@@ -1,0 +1,5 @@
+,MAE_5fold,MedAPE_5fold,MAPE_5fold,MAPEcore_5fold,MAE_Aug,MedAPE_Aug,MAPE_Aug,MAPEcore_Aug
+Exclude quote_signal,127.793,2.8,5.348,3.084,130.892,3.331,5.93,3.437
+Include raw quote_signal,118.079,2.096,4.987,2.734,149.429,4.055,6.988,4.607
+Regime-aware: signed signal only (FINAL),112.398,1.764,4.766,2.505,191.084,5.38,8.331,5.996
+Regime-aware: signed signal + regime indicator,109.522,1.511,4.62,2.354,198.258,5.41,8.415,6.072

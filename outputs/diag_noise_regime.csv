@@ -1,0 +1,9 @@
+config,split,n_noise_train,n_test,MAE,MedAPE,MAPE,MAPE_core
+Exclude quote_signal,"train < Aug 16, test Aug 16-31",2313,2446,110.0,2.45,4.85,2.63
+Exclude quote_signal,"train < Aug 9, test Aug 9-31 (more noise-regime test rows)",1268,3491,123.86,2.78,5.48,2.97
+Include raw quote_signal,"train < Aug 16, test Aug 16-31",2313,2446,117.09,2.55,5.05,2.86
+Include raw quote_signal,"train < Aug 9, test Aug 9-31 (more noise-regime test rows)",1268,3491,134.42,2.94,5.85,3.4
+Regime-aware: signed signal only (FINAL),"train < Aug 16, test Aug 16-31",2313,2446,90.53,1.59,4.06,1.88
+Regime-aware: signed signal only (FINAL),"train < Aug 9, test Aug 9-31 (more noise-regime test rows)",1268,3491,99.49,1.64,4.43,1.98
+Regime-aware: signed signal + regime indicator,"train < Aug 16, test Aug 16-31",2313,2446,90.39,1.59,4.06,1.87
+Regime-aware: signed signal + regime indicator,"train < Aug 9, test Aug 9-31 (more noise-regime test rows)",1268,3491,99.16,1.61,4.42,1.96
